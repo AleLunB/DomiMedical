@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".refistro"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/stencil"
+        android:gravity="center"
+        android:text="REGISTRARSE"
+        android:textColor="#0B2B57"
+        android:textSize="40dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/iniciarsesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="Iniciar Sesion"
+        android:textColor="#0B2B57"
+        android:textSize="20dp"
+        android:fontFamily="@font/bellmt"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="205dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="left"
+        android:text="Nombre:"
+        android:textColor="#4D1010"
+        android:textSize="25dp"
+        android:fontFamily="@font/haettenschweiler" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="246dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="#ffffff"
+        android:drawablePadding="10dp"
+        android:inputType="text"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="277dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="left"
+        android:text="Correo:"
+        android:textColor="#4D1010"
+        android:textSize="25dp"
+        android:fontFamily="@font/haettenschweiler"
+        />
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="307dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="#ffffff"
+        android:drawablePadding="10dp"
+        android:inputType="textEmailAddress"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="335dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="left"
+        android:text="Telefono:"
+        android:textColor="#4D1010"
+        android:textSize="25dp"
+        android:fontFamily="@font/haettenschweiler"
+        />
+
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="365dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="#ffffff"
+        android:drawablePadding="10dp"
+        android:inputType="number"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="393dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="left"
+        android:text="Direccion:"
+        android:textColor="#4D1010"
+        android:textSize="25dp"
+        android:fontFamily="@font/haettenschweiler"
+        />
+
+    <EditText
+        android:id="@+id/direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="423dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="#ffffff"
+        android:drawablePadding="10dp"
+        android:inputType="textPostalAddress"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="451dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="left"
+        android:text="Contraseña:"
+        android:textColor="#4D1010"
+        android:textSize="25dp"
+        android:fontFamily="@font/haettenschweiler"
+        />
+
+    <EditText
+        android:id="@+id/contrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="481dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="#ffffff"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tv10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="513dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="left"
+        android:text="Confirmar Contraseña:"
+        android:textColor="#4D1010"
+        android:textSize="25dp"
+        android:fontFamily="@font/haettenschweiler"
+        />
+
+    <EditText
+        android:id="@+id/recontrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="546dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="#ffffff"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#738BDF"
+        android:fontFamily="@font/bellmt"
+        android:text="Registrarse"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
