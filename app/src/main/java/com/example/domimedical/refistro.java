@@ -3,17 +3,20 @@ package com.example.domimedical;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.domimedical.persistencia.DbHelper;
 import com.google.android.material.button.MaterialButton;
 
 public class refistro extends AppCompatActivity {
 
     EditText nombre, correo, telefono, direccion, contrasena, recontrasena;
+    Button iniciarsesion, registrarse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,8 +44,20 @@ public class refistro extends AppCompatActivity {
         registrarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent cambinicio = new Intent(refistro.this, inicio.class);
-                startActivity(cambinicio);
+                try {
+                    DbHelper dbhelper = new DbHelper(refistro.this);
+                    SQLiteDatabase db = dbhelper.getWritableDatabase();
+                    if (db != null) {
+                        Toast.makeText(refistro.this, "BASE DE DATOS CREADA", Toast.LENGTH_LONG).show();
+                        Intent cambinicio = new Intent(refistro.this, inicio.class);
+                        startActivity(cambinicio);
+                    } else {
+                        Toast.makeText(refistro.this, "ERROR AL CREAR BASE DE DATOS", Toast.LENGTH_LONG).show();
+                    }
+                } catch (Exception e){
+                    Toast.makeText(refistro.this, e.getMessage().toString(), Toast.LENGTH_LONG).show();
+                }
+
             }
         });
 
